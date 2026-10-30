@@ -1,81 +1,192 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Page with Sections</title>
-  <meta name="description" content="A sample web page with multiple sections.">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Page with Sections</title>
+
+    <meta name="description" content="A sample web page with multiple sections.">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+body { @apply m-0 font-sans text-slate-900 bg-white; }
+header { @apply px-[9%] pt-8 pb-10 md:px-[20%] md:py-12 text-center; }
+main > section { @apply px-[9%] py-8 md:px-[20%] md:py-12; }
+h1 { @apply text-4xl md:text-6xl font-bold tracking-tight leading-tight mb-5; }
+header h2, header > p { @apply text-xl md:text-2xl font-normal leading-relaxed; }
+section h2 { @apply text-2xl md:text-3xl font-semibold tracking-tight mt-8 mb-4; }
+p { @apply text-lg leading-relaxed mb-5; }
+i { @apply italic; }
+a { @apply underline underline-offset-4 decoration-2 font-semibold transition-colors hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-4; }
+footer { @apply px-[9%] py-8 text-center; }
+footer p { @apply mb-0 text-sm; }
+section > :first-child { @apply mt-0; }
+section > :last-child { @apply mb-0; }
+@theme { --color-ink: #172554; }
+header { @apply bg-ink text-white; }
+.section-blue { @apply bg-blue-950 text-white; }
+.section-light { @apply bg-sky-100 text-slate-950; }
+.section-purple { @apply bg-purple-950 text-white; }
+.section-cream { @apply bg-amber-100 text-slate-950; }
+.section-green { @apply bg-emerald-950 text-white; }
+section a { @apply hover:text-amber-300; }
+</style>
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="icon" href="../assets/img/favicons/favicon.ico">
+<link rel="manifest" href="../assets/img/favicons/site.webmanifest">
+</head>
 
 
-</head>    
-    
 <body>
 
- <!-- Hero block -->
     <header>
-        <h1>Big heading</h1>
+
+        <h1 class="uppercase">Big heading</h1>
+
         <h2>Smaller sub-heading</h2>
+
     </header>
 
-    <!-- Main content of web page in sections -->
+
     <main>
-        <section>
-            <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor quas iusto saepe exercitationem, mollitia magnam aliquid dolores voluptatibus expedita, obcaecati possimus. Tempora id hic error quidem aperiam illum aliquid sed!</p>
+        <section class="section-blue">
+
+            <h2>Smaller Heading</h2>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Minima exercitationem, fuga doloribus sequi sint eveniet nobis
+                nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel
+                ullam dolores natus in quisquam?
+            </p>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolor quas iusto saepe exercitationem, mollitia magnam aliquid
+                dolores voluptatibus expedita, obcaecati possimus.
+                Tempora id hic error quidem aperiam illum aliquid sed!
+            </p>
 
         </section>
 
-        <section>
-            <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dicta numquam quo aspernatur eveniet expedita explicabo repudiandae, reprehenderit nam sed natus necessitatibus! Repellat quibusdam corrupti, doloribus sunt quia adipisci iusto.</p>
+        <section class="section-light">
+
+            <h2>Smaller Heading</h2>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Minima exercitationem, fuga doloribus sequi sint eveniet nobis
+                nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel
+                ullam dolores natus in quisquam?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Laboriosam dicta numquam quo aspernatur eveniet expedita
+                explicabo repudiandae, reprehenderit nam sed natus necessitatibus!
+                Repellat quibusdam corrupti, doloribus sunt quia adipisci iusto.
+            </p>
 
         </section>
 
-        <section>
-            <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum recusandae mollitia optio temporibus cupiditate sed nisi tempora aspernatur voluptas aut. Illum fuga ut aliquam sint corrupti possimus ducimus placeat expedita?</p>
+        <section class="section-purple">
+
+            <h2>Smaller Heading</h2>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Minima exercitationem, fuga doloribus sequi sint eveniet nobis
+                nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel
+                ullam dolores natus in quisquam?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Rerum recusandae mollitia optio temporibus cupiditate sed nisi
+                tempora aspernatur voluptas aut. Illum fuga ut aliquam sint
+                corrupti possimus ducimus placeat expedita?
+            </p>
 
         </section>
 
-        <section>
-            <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum recusandae mollitia optio temporibus cupiditate sed nisi tempora aspernatur voluptas aut. Illum fuga ut aliquam sint corrupti possimus ducimus placeat expedita?</p>
+        <section class="section-cream">
+
+            <h2>Smaller Heading</h2>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Minima exercitationem, fuga doloribus sequi sint eveniet nobis
+                nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel
+                ullam dolores natus in quisquam?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Rerum recusandae mollitia optio temporibus cupiditate sed nisi
+                tempora aspernatur voluptas aut. Illum fuga ut aliquam sint
+                corrupti possimus ducimus placeat expedita?
+            </p>
 
         </section>
 
-        <section>
-            <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum recusandae mollitia optio temporibus cupiditate sed nisi tempora aspernatur voluptas aut. Illum fuga ut aliquam sint corrupti possimus ducimus placeat expedita?</p>
+        <section class="section-green">
+
+            <h2>Smaller Heading</h2>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Minima exercitationem, fuga doloribus sequi sint eveniet nobis
+                nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel
+                ullam dolores natus in quisquam?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Rerum recusandae mollitia optio temporibus cupiditate sed nisi
+                tempora aspernatur voluptas aut. Illum fuga ut aliquam sint
+                corrupti possimus ducimus placeat expedita?
+            </p>
 
         </section>
 
-        <section>
+
+        <section class="section-blue">
+
             <h2>Smaller Heading</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum recusandae mollitia optio temporibus cupiditate sed nisi tempora aspernatur voluptas aut. Illum fuga ut aliquam sint corrupti possimus ducimus placeat expedita?</p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Minima exercitationem, fuga doloribus sequi sint eveniet nobis
+                nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel
+                ullam dolores natus in quisquam?
+            </p>
 
-            <p><a href="../index.html">Back to Home page</a></p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Rerum recusandae mollitia optio temporibus cupiditate sed nisi
+                tempora aspernatur voluptas aut. Illum fuga ut aliquam sint
+                corrupti possimus ducimus placeat expedita?
+            </p>
+
+            <a href="../index.html" class="back-home">
+                Back to Home page
+            </a>
 
         </section>
-    
+
     </main>
-    <!-- main content ends here -->
 
-    </body>
-    
-    </html>
-    
-    
+</body>
+
+</html>
