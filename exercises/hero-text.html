@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hero Block with Text</title>
+    <meta name="description"
+          content="A responsive hero block with animated text and a background colour gradient.">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        header {
+            @apply relative isolate
+            min-h-[60vh] md:min-h-[80vh]
+            bg-linear-to-br from-blue-950 via-purple-900 to-pink-900
+            flex flex-col justify-center items-center
+            px-8 lg:px-60 py-12
+            text-center overflow-hidden;
+        }
+
+        header h1,
+        header h2 {
+            @apply relative z-20 text-shadow-lg/30;
+        }
+
+        header h1 {
+            @apply text-5xl sm:text-7xl md:text-8xl
+            text-white font-bold tracking-tight;
+        }
+
+        header h2 {
+            @apply mt-6 text-2xl sm:text-4xl md:text-5xl text-white;
+        }
+
+        .slide-in-top {
+            animation: slide-in-top 1s
+                cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        .slide-in-left {
+            animation: slide-in-left 0.5s
+                cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        @keyframes slide-in-top {
+            0% {
+                transform: translateY(-1000px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slide-in-left {
+            0% {
+                transform: translateX(-1000px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    body { @apply m-0 font-sans; }
+footer { @apply p-8 bg-slate-950 text-center text-white; }
+footer a, button { @apply underline underline-offset-4 hover:text-sky-200 focus-visible:outline-2 focus-visible:outline-offset-4; }
+@media (prefers-reduced-motion: reduce) { .slide-in-top, .slide-in-left { animation: none; } }
+</style>
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="icon" href="../assets/img/favicons/favicon.ico">
+<link rel="manifest" href="../assets/img/favicons/site.webmanifest">
+</head>
+
+<body>
+    <header>
+
+        <h1 class="slide-in-top">Education for life</h1>
+
+        <h2 class="slide-in-left">A brighter career and future</h2>
+    </header>
+<footer><a href="../index.html">Back to Home</a></footer>
+
+</body>
+</html>
