@@ -1,15 +1,102 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>My website</title>
-</head>
-<body>
-    <h2>Welcome Mr Bombastic</h2>
-    <p> I created this as test</p>
+<html lang="en">
 
-    <p><a href="exercises/page-1.html"> A tale of Two Cities</a></p>
-    <p><a href="exercises/page-2.html"> Page 2</a></p>
-    <p><a href="exercises/soccer.html"> Soccer</a></p>
-    <p><a href="exercises/page-3.html"> Page 3</a></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eduardo Santos | Web Design</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+body { @apply m-0 font-sans text-slate-900 bg-white; }
+header { @apply px-[9%] pt-8 pb-10 md:px-[20%] md:py-12 text-center; }
+main > section { @apply px-[9%] py-8 md:px-[20%] md:py-12; }
+h1 { @apply text-4xl md:text-6xl font-bold tracking-tight leading-tight mb-5; }
+header h2, header > p { @apply text-xl md:text-2xl font-normal leading-relaxed; }
+section h2 { @apply text-2xl md:text-3xl font-semibold tracking-tight mt-8 mb-4; }
+p { @apply text-lg leading-relaxed mb-5; }
+i { @apply italic; }
+a { @apply underline underline-offset-4 decoration-2 font-semibold transition-colors hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-4; }
+footer { @apply px-[9%] py-8 text-center; }
+footer p { @apply mb-0 text-sm; }
+section > :first-child { @apply mt-0; }
+section > :last-child { @apply mb-0; }
+header { @apply min-h-[60vh] flex flex-col items-center justify-center bg-slate-900 text-white; } header h2 { @apply text-sky-200; } main { @apply bg-stone-100; } section a { @apply text-slate-700 hover:text-blue-800; } .header-line { @apply w-16 h-1 bg-sky-200 mb-6 mx-auto; } .developer-image { @apply w-full max-w-3xl mx-auto rounded-xl shadow-lg mb-10; } footer { @apply bg-stone-100 text-slate-600; }
+</style>
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+<link rel="icon" href="assets/img/favicons/favicon.ico">
+<link rel="manifest" href="assets/img/favicons/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <div class="header-text max-w-3xl">
+            <div class="header-line" aria-hidden="true"></div>
+
+            <h1>Eduardo Santos</h1>
+
+            <h2>Welcome to my website.</h2>
+
+            <p>
+                I created this website to showcase some of my recent web design work.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="uppercase tracking-widest">My Web Design Exercises</h2>
+<img class="developer-image" src="assets/img/frontend-development.svg" alt="Illustration of a laptop displaying HTML and CSS code" width="960" height="540">
+
+            <p>
+                <a href="exercises/page-1.html">
+                    A Tale of Two Cities
+                </a>
+            </p>
+
+            <p>
+                <a href="exercises/page-2.html">
+                    Purple rain
+                </a>
+            </p>
+
+            <p>
+                <a href="exercises/page-3.html">
+                    Big Heading
+                </a>
+            </p>
+
+            <p>
+                <a href="exercises/page-4.html">
+                    Vincent Van Gogh
+                </a>
+            </p>
+
+            <p>
+                <a href="exercises/page-5.html">
+                    Places to Visit in Ireland
+                </a>
+            </p>
+
+            <p>
+                <a href="exercises/hero-text.html">
+                    Hero Block with Text
+                </a>
+            </p>
+
+
+
+        <p><a href="exercises/hero-image.html">Hero Block with Image</a></p>
+<p><a href="exercises/hero-video.html">Hero Block with Video</a></p>
+</section>
+    </main>
+
+    <footer>
+        <p>Eduardo Santos | Web Design</p>
+    </footer>
 </body>
+
 </html>
