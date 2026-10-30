@@ -1,72 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>A Tale of Two Cities</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Tale of Two Cities</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+body { @apply m-0 font-sans text-slate-900 bg-white; }
+header { @apply px-[9%] pt-8 pb-10 md:px-[20%] md:py-12 text-center; }
+main > section { @apply px-[9%] py-8 md:px-[20%] md:py-12; }
+h1 { @apply text-4xl md:text-6xl font-bold tracking-tight leading-tight mb-5; }
+header h2, header > p { @apply text-xl md:text-2xl font-normal leading-relaxed; }
+section h2 { @apply text-2xl md:text-3xl font-semibold tracking-tight mt-8 mb-4; }
+p { @apply text-lg leading-relaxed mb-5; }
+i { @apply italic; }
+a { @apply underline underline-offset-4 decoration-2 font-semibold transition-colors hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-4; }
+footer { @apply px-[9%] py-8 text-center; }
+footer p { @apply mb-0 text-sm; }
+section > :first-child { @apply mt-0; }
+section > :last-child { @apply mb-0; }
+header { @apply bg-red-900 text-white; } footer a { @apply inline-block bg-red-900 text-white px-6 py-3 hover:bg-red-800; }
+</style>
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="icon" href="../assets/img/favicons/favicon.ico">
+<link rel="manifest" href="../assets/img/favicons/site.webmanifest">
 </head>
+
 
 <body>
 
-  <header>
-    <h1>A Tale of Two Cities</h1>
-    <h2>Charles Dickens</h2>
-  </header>
+    <header>
 
-  <main>
+        <h1>A Tale of Two Cities</h1>
 
-    <section>
-      <p>
-        The story takes place in London and Paris during a time of great political
-        and social change. The people of France are suffering from poverty,
-        unfair treatment, and hunger, while the wealthy continue to live in comfort.
-      </p>
-    </section>
+        <h2>Charles Dickens</h2>
 
-    <section>
-      <p>
-        In London, life appears calmer, but the characters are connected to events
-        happening across the English Channel. Charles Darnay, a young Frenchman,
-        leaves his homeland because he disagrees with the cruelty of the aristocracy.
-        He eventually travels to England, where he meets Lucie Manette.
-      </p>
-    </section>
+    </header>
 
-    <section>
-      <p>
-        Lucie is a kind and caring young woman whose father, Dr. Manette, has spent
-        many years imprisoned in the Bastille. After his release, Lucie helps him
-        recover and rebuild his life.
-      </p>
-    </section>
 
-    <section>
-      <p>
-        Another important character is Sydney Carton, a troubled English lawyer who
-        looks very similar to Darnay. Although Carton struggles with his own sense
-        of purpose, his feelings for Lucie eventually lead him to make a remarkable
-        sacrifice.
-      </p>
-    </section>
+    <main>
 
-    <section>
-      <p>
-        As the French Revolution begins, the lives of these characters become
-        increasingly dangerous. The story explores love, sacrifice, justice,
-        courage, and the possibility of starting a new life.
-      </p>
-    </section>
+        <section>
+            <p>
+                The story takes place in London and Paris during a time of great political
+                and social change. The people of France are suffering from poverty,
+                unfair treatment, and hunger, while the wealthy continue to live in comfort.
+            </p>
+        </section>
 
-    <section>
-      <p>
-        The novel shows how ordinary people can be affected by historical events
-        and how one person's actions can have a lasting impact on others.
-      </p>
-    </section>
 
-  </main>
+        <section>
+            <p>
+                In London, life appears calmer, but the characters are connected to events
+                happening across the English Channel. Charles Darnay, a young Frenchman,
+                leaves his homeland because he disagrees with the cruelty of the aristocracy.
+                He eventually travels to England, where he meets Lucie Manette.
+            </p>
+        </section>
 
-  <p>
-    <a href="../index.html">Back to Home</a>
-  </p>
+
+        <section>
+            <p>
+                Lucie is a kind and caring young woman whose father, Dr. Manette, has spent
+                many years imprisoned in the Bastille. After his release, Lucie helps him
+                recover and rebuild his life.
+            </p>
+        </section>
+
+
+        <section>
+            <p>
+                Another important character is Sydney Carton, a troubled English lawyer who
+                looks very similar to Darnay. Although Carton struggles with his own sense
+                of purpose, his feelings for Lucie eventually lead him to make a remarkable
+                sacrifice.
+            </p>
+        </section>
+
+
+        <section>
+            <p>
+                As the French Revolution begins, the lives of these characters become
+                increasingly dangerous. The story explores love, sacrifice, justice,
+                courage, and the possibility of starting a new life.
+            </p>
+        </section>
+
+
+        <section>
+            <p>
+                The novel shows how ordinary people can be affected by historical events
+                and how one person's actions can have a lasting impact on others.
+            </p>
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <a href="../index.html">
+            Back to Home
+        </a>
+
+    </footer>
 
 </body>
+
 </html>
