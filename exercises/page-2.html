@@ -10,73 +10,127 @@
 
     <meta name="description"
         content="A basic web page containing some text from Wikipedia about the 1983-recorded song Purple Rain by Prince">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+body { @apply m-0 font-sans text-slate-900 bg-white; }
+header { @apply px-[9%] pt-8 pb-10 md:px-[20%] md:py-12 text-center; }
+main > section { @apply px-[9%] py-8 md:px-[20%] md:py-12; }
+h1 { @apply text-4xl md:text-6xl font-bold tracking-tight leading-tight mb-5; }
+header h2, header > p { @apply text-xl md:text-2xl font-normal leading-relaxed; }
+section h2 { @apply text-2xl md:text-3xl font-semibold tracking-tight mt-8 mb-4; }
+p { @apply text-lg leading-relaxed mb-5; }
+i { @apply italic; }
+a { @apply underline underline-offset-4 decoration-2 font-semibold transition-colors hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-4; }
+footer { @apply px-[9%] py-8 text-center; }
+footer p { @apply mb-0 text-sm; }
+section > :first-child { @apply mt-0; }
+section > :last-child { @apply mb-0; }
+header { @apply bg-purple-900 text-white; } section h2 { @apply text-purple-900; } .source { @apply bg-purple-100; } .back-home { @apply text-center; }
+</style>
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="icon" href="../assets/img/favicons/favicon.ico">
+<link rel="manifest" href="../assets/img/favicons/site.webmanifest">
 </head>
+
 
 <body>
 
     <header>
+
         <h1>Purple Rain</h1>
+
+        <p>Prince and The Revolution</p>
+
     </header>
+
 
     <main>
 
         <section>
+
             <h2>Introduction</h2>
 
             <p>
-                <i>Purple Rain</i> is a song by American musician Prince and his backing band The Revolution.
-                It is the title track from the 1984 album of the same name, which in turn is the soundtrack
-                album for the 1984 film of the same name.
+                <i>Purple Rain</i> is a song by American musician Prince and his backing band
+                The Revolution. It is the title track from the 1984 album of the same name,
+                which in turn is the soundtrack album for the 1984 film of the same name.
             </p>
+
         </section>
 
+
         <section>
+
             <h2>Origins</h2>
 
             <p>
-                Originally written as a country song and intended to be a collaboration with Stevie Nicks,
-                Prince explained the meaning of the song as follows:
-                <i>"When there's blood in the sky... red and blue = purple. Purple rain pertains to the end
-                of the world and being with the one you love and letting your faith/god guide you through
-                the purple rain."</i>
+                Originally written as a country song and intended to be a collaboration
+                with Stevie Nicks, Prince explained the meaning of the song as follows:
+
+                <i>
+                    "When there's blood in the sky... red and blue = purple. Purple rain
+                    pertains to the end of the world and being with the one you love and
+                    letting your faith/god guide you through the purple rain."
+                </i>
             </p>
+
         </section>
 
+
         <section>
+
             <h2>Recording</h2>
 
             <p>
-                The song was recorded during a benefit concert for the Minnesota Dance Theatre at the
-                First Avenue nightclub in Minneapolis on August 3, 1983.
+                The song was recorded during a benefit concert for the Minnesota Dance
+                Theatre at the First Avenue nightclub in Minneapolis on August 3, 1983.
+
                 <i>City Pages</i> described the 70-minute performance as Prince's
                 "sweatiest and most soulful hometown concert yet."
             </p>
+
         </section>
 
+
         <section>
+
             <h2>Reception and legacy</h2>
 
             <p>
-                The song ranked number 144 on the Rolling Stone list of the 500 Greatest Songs of All Time.
-                Q magazine placed it at number 40 in its list of the 100 Greatest Guitar Tracks, and
-                Pitchfork named it the best song of the 1980s. The song is also included in
-                The Rock and Roll Hall of Fame's 500 Songs that Shaped Rock and Roll.
+                The song ranked number 144 on the Rolling Stone list of the 500 Greatest
+                Songs of All Time. Q magazine placed it at number 40 in its list of the
+                100 Greatest Guitar Tracks, and Pitchfork named it the best song of the
+                1980s.
+
+                The song is also included in The Rock and Roll Hall of Fame's
+                500 Songs that Shaped Rock and Roll.
             </p>
+
         </section>
 
-        <section>
+
+        <section class="source">
+
             <p>
                 <b>Source:</b> <i>Wikipedia</i>.
             </p>
+
         </section>
 
-    </main>
 
-    <p>
-        <a href="../index.html">
-            Back to Home page
-        </a>
-    </p>
+        <div class="back-home">
+
+            <a href="../index.html">
+                Back to Home page
+            </a>
+
+        </div>
+
+    </main>
 
 </body>
 
